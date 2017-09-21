@@ -38,6 +38,8 @@ The Processing sends serials to a master Arduino.
 
 Michinari Kono, U-Tokyo
 
+Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki for assisting the work for both previous and prior versions.
+
 
 ## Read Before Use
 
