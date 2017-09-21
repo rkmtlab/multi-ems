@@ -35,3 +35,20 @@ The Processing sends serials to a master Arduino.
 
 Michinari Kono, U-Tokyo
 
+
+## Read Before Use
+
+- Use only under confident understandings of EMS. 
+  - You can see details from Pedro Lopes's work. https://github.com/PedroLopes/openEMSstim
+- The board and softwares are NOT medically approved. Always use the device following author's instruction.
+- Do NOT leave the power on when it is not in use.
+- Do NOT place electrodes to dangerous parts of the body. E.g., around the chest/heart.
+- Take care of the output voltage. While manipulating the output by the analog version, the volume may rotate in unintended conditions.
+- See LICENCE.
+- Follow the Liabilirt Waiver before usage.
+
+
+## Liability Waiver
+
+Please follow the following before usage.
+https://github.com/PedroLopes/openEMSstim/blob/master/documentation/liability_waiver.md
