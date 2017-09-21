@@ -19,9 +19,9 @@ final int MAX_PULSE = 240;
 final int MIN_FREQ = 50; //f > 50
 final int MAX_FREQ = 150;
 
-//1 < t < 10 sec
-final int MIN_TIME = 1;
-final int MAX_TIME = 5;
+//100 ms < t < 2000 ms
+final int MIN_TIME = 500;
+final int MAX_TIME = 2000;
 
 //init values
 final int PULSE_INIT = 70;
@@ -102,14 +102,14 @@ void draw() {
   /*
   send to arduino after a 500 msec delay
    */
-  if (checkBox.getState(4)==true) {
+  if (checkBox.getState(3)==true) {
     delay(500);
 
     serialPrinting();
     
     delay(1000);
     
-    checkBox.deactivate(4);
+    checkBox.deactivate(3);
   }
   
 }
@@ -137,7 +137,7 @@ void serialPrinting() {
     port.write(channels[i].getFrequency());
     port.write(0);  //dummy for voltage
     port.write(channels[i].getState());
-    port.write(channels[i].getTime());
+    port.write(channels[i].getTime()/100); //msec converted for serial
   }
 }
 
@@ -242,7 +242,7 @@ void controls() {
           .setRange(MIN_TIME, MAX_TIME)
             .setValue(TIME_INIT)
               .setHeight(20)
-                .setNumberOfTickMarks(5);
+                .setNumberOfTickMarks(16);
     ;
   }
 
