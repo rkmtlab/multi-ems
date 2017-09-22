@@ -35,7 +35,7 @@ The Processing sends serials to a master Arduino.
 
 ## Board Detail
 
-![Board](https://github.com/rkmtlab/multi-ems/tree/master/image/boardinfo.jpg)
+![boardinfo](https://user-images.githubusercontent.com/22442291/30726366-4db8ca26-9f85-11e7-8a8a-daeab15c35e7.jpg)
 
 
 
