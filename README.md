@@ -44,7 +44,7 @@ Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki for assistin
 ## Read Before Use
 
 - Use only under confident understandings of EMS. 
-  - You can see details from Pedro Lopes's work. https://github.com/PedroLopes/openEMSstim
+  - You can see details from other great projects. https://github.com/PedroLopes/openEMSstim
 - The board and softwares are NOT medically approved. Always use the device following author's instruction.
 - Do NOT leave the power on when it is not in use.
 - Do NOT place electrodes to dangerous parts of the body. E.g., around the chest/heart.
