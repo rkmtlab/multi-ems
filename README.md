@@ -33,6 +33,11 @@ The Processing sends serials to a master Arduino.
   - emsFaceArd_v3: The Arduino code
 
 
+## Board Detail
+
+![Board](https://github.com/rkmtlab/multi-ems/tree/master/image/boardinfo.jpg)
+
+
 
 ## Authors
 
