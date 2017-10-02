@@ -8,18 +8,24 @@ Permissions are required for any other personal usage.
 
 ## Description
 
-The Processing sends serials to a master Arduino.
+The Processing sends serials to a master Arduino.  
+We currently recommend to use the analog version.  
 
+- ems_analog:  
+  Control voltage by analog output.  
 
 - ems_digital:  
   The master Arduino communicates with the slave Arduino via I2C.
   Control voltage by digital output.
 
-- ems_analog:  
-  Control voltage by analog output.
+
 
 
 ## Files
+
+- ems_analog
+  - emsFace_v3: The Processing code - GUI - v3
+  - emsFaceArd_v3: The Arduino code  
 
 - ems_digital
   - emsFacev2: The Processing code - GUI - v2
@@ -28,9 +34,6 @@ The Processing sends serials to a master Arduino.
   - wire_ems_time (recommended): The slave Arduino for voltage adjusting pulse generation (500 Hz max), gradually increase the output voltage
 
 
-- ems_analog
-  - emsFace_v3: The Processing code - GUI - v3
-  - emsFaceArd_v3: The Arduino code
 
 
 ## Board Detail
@@ -43,7 +46,7 @@ The Processing sends serials to a master Arduino.
 
 Michinari Kono, U-Tokyo
 
-Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki for assisting the work for both previous and prior versions.
+Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki for assisting the work for both current and prior versions.
 
 
 ## Read Before Use
@@ -56,6 +59,13 @@ Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki for assistin
 - Take care of the output voltage. While manipulating the output by the analog version, the volume may rotate in unintended conditions.
 - See LICENCE.
 - Follow the Liabilirt Waiver before usage.
+
+
+## Developing your own Board
+
+Note that there are some errors in the .brd and .sch data (to be fixed).  
+- The transistor should be attached the opposite way.
+- Model number differs in the .sch (follow the partslist.txt).
 
 
 ## Liability Waiver
