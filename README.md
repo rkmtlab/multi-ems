@@ -2,8 +2,8 @@
 
 "multi-channel EMS" with Processing and Arduino.  
 Simultaneous output of maximum of 20 channels are available.  
-The board is designed for ["Human Augmentation Summer School 2017."](https://humanaugmentation.jp/summerschool2017/)
-Permissions are required for any other personal usage.
+The board is designed for ["Human Augmentation Summer School 2017."](https://humanaugmentation.jp/summerschool2017/)  
+Permissions are required for any other personal usage.  
 Note that the work is still in progress.
 
 ## Description
