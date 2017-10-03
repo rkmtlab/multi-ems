@@ -4,7 +4,7 @@
 Simultaneous output of maximum of 20 channels are available.  
 The board is designed for "Human Augmentation Summer School 2017."  
 Permissions are required for any other personal usage.
-
+Note that the work is still in progress.
 
 ## Description
 
@@ -16,8 +16,11 @@ We currently recommend to use the analog version.
 
 - ems_digital:  
   The master Arduino communicates with the slave Arduino via I2C.
-  Control voltage by digital output.
-
+  Control voltage by digital output.  
+  
+One board has 4 output channels.  
+However, the channels can be increased by using multiple boards.  
+In this case, minor revision is required for the source codes.
 
 
 
@@ -44,7 +47,7 @@ We currently recommend to use the analog version.
 
 ## Authors
 
-Michinari Kono, U-Tokyo
+Michinari Kono, U-Tokyo ( mkono50529[at]gmail.com )
 
 Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki for assisting the work for both current and prior versions.
 
@@ -56,8 +59,8 @@ Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki for assistin
 - The board and softwares are NOT medically approved. Always use the device following author's instruction.
 - Do NOT leave the power on when it is not in use.
 - Do NOT place electrodes to dangerous parts of the body. E.g., around the chest/heart.
-- Take care of the output voltage. While manipulating the output by the analog version, the volume may rotate in unintended conditions.
-- See LICENCE.
+- Take care of the output voltage. 
+- See LICENCE (under construction).
 - Follow the Liabilirt Waiver before usage.
 
 
@@ -72,3 +75,12 @@ Note that there are some errors in the .brd and .sch data (to be fixed).
 
 Please follow the following before usage.
 https://github.com/PedroLopes/openEMSstim/blob/master/documentation/liability_waiver.md
+
+
+##  Future Work and Areas of Improvement
+
+- The board can be upgraded and become much smaller by surface mounting.
+- The components are not limited to the things indicated in the partslist.txt. The board can modified to be much more cheaper/smaller.
+- The voltage changes exponentially. 
+- The name of the board/repository is temporal.
+- My original purpose of the board was to apply EMS to the face. This is why some of the file names are names something including the term ``face.'' These are to be renamed in future updates.
