@@ -2,7 +2,7 @@
 
 "multi-channel EMS" with Processing and Arduino.  
 Simultaneous output of maximum of 20 channels are available.  
-The board is designed for "Human Augmentation Summer School 2017."  
+The board is designed for ["Human Augmentation Summer School 2017."](https://humanaugmentation.jp/summerschool2017/)
 Permissions are required for any other personal usage.
 Note that the work is still in progress.
 
@@ -49,13 +49,13 @@ In this case, minor revision is required for the source codes.
 
 Michinari Kono, U-Tokyo ( mkono50529[at]gmail.com )
 
-Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki for assisting the work for both current and prior versions.
+Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto for assisting the work for both current and prior versions.
 
 
 ## Read Before Use
 
 - Use only under confident understandings of EMS. 
-  - You can see details from other great projects. https://github.com/PedroLopes/openEMSstim
+  - You can see details from other great projects [here.](https://github.com/PedroLopes/openEMSstim)
 - The board and softwares are NOT medically approved. Always use the device following author's instruction.
 - Do NOT leave the power on when it is not in use.
 - Do NOT place electrodes to dangerous parts of the body. E.g., around the chest/heart.
@@ -73,8 +73,7 @@ Note that there are some errors in the .brd and .sch data (to be fixed).
 
 ## Liability Waiver
 
-Please follow the following before usage.
-https://github.com/PedroLopes/openEMSstim/blob/master/documentation/liability_waiver.md
+Please follow and check the following [liability waiver](https://github.com/PedroLopes/openEMSstim/blob/master/documentation/liability_waiver.md) before usage.
 
 
 ##  Future Work and Areas of Improvement
