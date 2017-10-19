@@ -18,6 +18,14 @@ The Processing sends serials to a master Arduino.
 - ems_analog:  
   Control voltage by analog output.
 
+## Installation
+
+- Put this repo in your Arduino or Wiring "libraries" folder. 
+
+## Dependencies
+
+- [StandardCplusplus](https://github.com/maniacbug/StandardCplusplus)
+- [Metro](https://github.com/thomasfredericks/Metro-Arduino-Wiring)
 
 ## Files
 
