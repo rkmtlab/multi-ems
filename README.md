@@ -71,12 +71,27 @@ Note that there are some errors in the .brd and .sch data (to be fixed).
 - Model number differs in the .sch (follow the partslist.txt).
 
 
+## Electrodes  
+  
+Here are some example electrodes that are typically used in EMS work.  
+  
+- Sanitas compatible Electrodes  
+<https://tens-machine-pads.com/sanitas-electrodes/sanitas-compatible-electrodes-mixed-set-of-12-for-universal-use>
+
+- Omron Long Life Pad  
+<https://store.healthcare.omron.co.jp/item/HV_LLPAD_3P.html>  
+<https://www.amazon.com/Hv-llpad-Ereparusu-Frequency-Therapy-Omron/dp/B0002ERMBE>
+
+- Electrode Store, 1025: Small Hydrogel Electrodes w/Wires  
+<https://electrodestore.com/collections/disposable-emg-surface-electrodes/products/1025-emg-disposable-surface-electrodes>  
+  
+
 ## Liability Waiver
 
 Please follow and check the following [liability waiver](https://github.com/PedroLopes/openEMSstim/blob/master/documentation/liability_waiver.md) before usage.
 
 
-##  Future Work and Areas of Improvement
+## Future Work and Areas of Improvement
 
 - The board can be upgraded and become much smaller by surface mounting.
 - The components are not limited to the things indicated in the partslist.txt. The board can modified to be much more cheaper/smaller.
