@@ -1,11 +1,9 @@
-- Under construction
-
-Copyright (c) Michinari Kono 2017, The Univ. of Tokyo
-
-Permission is granted to be used free of charge.
-
-The board and software should not be copied, or distributed without any permission. 
-
-Be aware that the system is a prototype, which is an incomplete work and to be updated.
-
-The system is designed for the Human Augmentation Summer School 2017 (The Univ. of Tokyo, SONY), and not for any other purpose.
+The MIT License (MIT)   
+  
+Copyright (c) <2017> Michinari Kono  
+  
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  
+  
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  
+  
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
