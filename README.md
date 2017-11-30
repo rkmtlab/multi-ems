@@ -49,7 +49,7 @@ In this case, minor revision is required for the source codes.
 
 Michinari Kono, U-Tokyo ( mkono50529[at]gmail.com )
 
-Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto for assisting the work for both current and prior versions.
+Acknowledgements for Keisuke Shiro, Akira Matsuda, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto for assisting the work/repo for both current and prior versions.
 
 
 ## Read Before Use
@@ -60,7 +60,7 @@ Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki, and Jun Rek
 - Do NOT leave the power on when it is not in use.
 - Do NOT place electrodes to dangerous parts of the body. E.g., around the chest/heart.
 - Take care of the output voltage. 
-- See LICENCE.
+- See LICENSE.
 - Follow the Liabilirt Waiver before usage.
 
 
@@ -100,7 +100,7 @@ Please follow and check the following [liability waiver](https://github.com/Pedr
 - My original purpose of the board was to apply EMS to the face. This is why some of the file names are names something including the term ``face.'' These are to be renamed in future updates.  
   
   
-## Licence   
+## License   
   
 Copyright (c) 2017 Michinari Kono  
 Released under the MIT license  
