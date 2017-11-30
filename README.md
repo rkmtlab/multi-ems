@@ -60,7 +60,7 @@ Acknowledgements for Keisuke Shiro, Yoshio Ishiguro, Takashi Miyaki, and Jun Rek
 - Do NOT leave the power on when it is not in use.
 - Do NOT place electrodes to dangerous parts of the body. E.g., around the chest/heart.
 - Take care of the output voltage. 
-- See LICENCE (under construction).
+- See LICENCE.
 - Follow the Liabilirt Waiver before usage.
 
 
@@ -82,4 +82,11 @@ Please follow and check the following [liability waiver](https://github.com/Pedr
 - The components are not limited to the things indicated in the partslist.txt. The board can modified to be much more cheaper/smaller.
 - The voltage changes exponentially. 
 - The name of the board/repository is temporal.
-- My original purpose of the board was to apply EMS to the face. This is why some of the file names are names something including the term ``face.'' These are to be renamed in future updates.
+- My original purpose of the board was to apply EMS to the face. This is why some of the file names are names something including the term ``face.'' These are to be renamed in future updates.  
+  
+  
+## Licence   
+  
+Copyright (c) 2017 Michinari Kono  
+Released under the MIT license  
+
