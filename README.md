@@ -3,8 +3,7 @@
 "multi-channel EMS" with Processing and Arduino.  
 Simultaneous output of maximum of 20 channels are available.  
 The board is designed for ["Human Augmentation Summer School 2017."](https://humanaugmentation.jp/summerschool2017/)  
-Permissions are required for any other personal usage.  
-Note that the work is still in progress.
+
 
 ## Description
 
@@ -43,13 +42,6 @@ In this case, minor revision is required for the source codes.
 
 ![boardinfo](https://user-images.githubusercontent.com/22442291/30726366-4db8ca26-9f85-11e7-8a8a-daeab15c35e7.jpg)
 
-
-
-## Authors
-
-Michinari Kono, U-Tokyo ( mkono50529[at]gmail.com )
-
-Acknowledgements for Keisuke Shiro, Akira Matsuda, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto for assisting the work/repo for both current and prior versions.
 
 
 ## Read Before Use
@@ -98,6 +90,13 @@ Please follow and check the following [liability waiver](https://github.com/Pedr
 - The voltage changes exponentially. 
 - The name of the board/repository is temporal.
 - My original purpose of the board was to apply EMS to the face. This is why some of the file names are names something including the term ``face.'' These are to be renamed in future updates.  
+  
+  
+## Authors
+
+Michinari Kono, U-Tokyo ( mkono50529[at]gmail.com )
+
+Acknowledgements for Keisuke Shiro, Akira Matsuda, Yota Takakura, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto for assisting the work/repo for both current and prior versions.  
   
   
 ## License   
