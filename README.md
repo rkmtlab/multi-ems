@@ -97,7 +97,12 @@ Please follow and check the following [liability waiver](https://github.com/Pedr
 Michinari Kono, U-Tokyo ( mkono50529[at]gmail.com )
 
 Acknowledgements for Keisuke Shiro, Akira Matsuda, Yota Takakura, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto for assisting the work/repo for both current and prior versions.  
+
+
+## Publications  
   
+Michinari Kono, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto. 2018. Design and Study of a Multi-Channel Electrical Muscle Stimulation Toolkit for Human Augmentation. In Proceedings of the 9th Augmented Human International Conference (AH '18). ACM, New York, NY, USA, Article 11, 8 pages. DOI: https://doi.org/10.1145/3174910.3174913  
+
   
 ## License   
   
