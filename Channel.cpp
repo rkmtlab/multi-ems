@@ -15,7 +15,7 @@ int rkmtlab::MultiEMS::Channel::channelIdentifier()
 	return this->_channelIdentifier;
 }
 
-int rkmtlab::MultiEMS::Channel::drive(long startSec)
+int rkmtlab::MultiEMS::Channel::drive()
 {
 	if (this->state == Channel::State::Enable) {
 		digitalWrite(this->channelIdentifier() + 2, HIGH);

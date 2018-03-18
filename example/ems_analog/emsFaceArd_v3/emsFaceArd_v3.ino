@@ -33,7 +33,6 @@ void loop()
 		channels[i].discharge();
 	}
 
-	//if serial recieved, read and write to i2c
 	if (Serial.available() > 19) {
 		for (int i = 0; i < channels.size(); i++) {
 			channels[i].pulse = Serial.read();
@@ -53,7 +52,7 @@ void channelWrite()
 	//this must be updated for individual controls of durations
 	for (int t = 0; t < ((channels[0].duration)) / (1000 / channels[0].frequency); t++) {
 		for (int i = 0; i < channels.size(); i++) {
-			channels[i].drive(0);
+			channels[i].drive();
 		}
 		//one pulse relevant for the freq
 		//microsec calculation
