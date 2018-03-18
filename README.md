@@ -22,6 +22,14 @@ However, the channels can be increased by using multiple boards.
 In this case, minor revision is required for the source codes.
 
 
+## Installation
+
+- Put this repo in your Arduino or Wiring "libraries" folder. 
+
+## Dependencies
+
+- [StandardCplusplus](https://github.com/maniacbug/StandardCplusplus)
+- [Metro](https://github.com/thomasfredericks/Metro-Arduino-Wiring)
 
 ## Files
 
