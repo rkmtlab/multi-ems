@@ -24,11 +24,10 @@ namespace MultiEMS
 		int state;
 		int duration;
 
-		Channel(int channelIdentifier, int pulse, int frequency, int voltage, Channel::State state, int duration);
+		Channel(int channelIdentifier, int pulse, int frequency, int voltage);
 		int channelIdentifier();
 		int drive();
 		void discharge();
-		// int channelVoltage(int channelNumber, long startSec);
 	};
 }
 }

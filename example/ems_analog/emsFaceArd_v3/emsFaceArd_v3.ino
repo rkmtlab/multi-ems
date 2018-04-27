@@ -7,8 +7,6 @@
 #include <vector>
 using namespace std;
 
-//500 Hz max for voltage
-
 std::vector<rkmtlab::MultiEMS::Channel> channels;
 int channelNum = 4;
 
@@ -17,29 +15,24 @@ void setup()
 	Serial.begin(115200);
 
 	for (int i = 0; i < channelNum; i++) {
-		channels.push_back(rkmtlab::MultiEMS::Channel(i, 100, 100, 50, rkmtlab::MultiEMS::Channel::State::Disable, 1));
-		pinMode(i + 2, OUTPUT);
-	}
-
-	for (int j = 4; j < 8; j++) {
-		pinMode(j + 2, OUTPUT);
+		channels.push_back(rkmtlab::MultiEMS::Channel(i, 100, 100, 50));
 	}
 }
 
 void loop()
 {
-	//alwayas discharge
-	for (int i = 0; i < channelNum; i++) {
-		channels[i].discharge();
+	//always discharge
+	for (rkmtlab::MultiEMS::Channel c : channels) {
+		c.discharge();
 	}
 
 	if (Serial.available() > 19) {
-		for (int i = 0; i < channels.size(); i++) {
-			channels[i].pulse = Serial.read();
-			channels[i].frequency = Serial.read();
-			channels[i].voltage = Serial.read();
-			channels[i].state = Serial.read();
-			channels[i].duration = Serial.read() * 100; // converted for msec
+		for (rkmtlab::MultiEMS::Channel c : channels) {
+			c.pulse = Serial.read();
+			c.frequency = Serial.read();
+			c.voltage = Serial.read();
+			c.state = Serial.read();
+			c.duration = Serial.read() * 100; // converted for msec
 		}
 		channelWrite();
 	}
@@ -50,12 +43,12 @@ void channelWrite()
 {
 	//duration * 10 for debug
 	//this must be updated for individual controls of durations
-	for (int t = 0; t < ((channels[0].duration)) / (1000 / channels[0].frequency); t++) {
-		for (int i = 0; i < channels.size(); i++) {
-			channels[i].drive();
+	for (int i = 0; i < ((channels[0].duration)) / (1000 / channels[0].frequency); i++) {
+		for (rkmtlab::MultiEMS::Channel c : channels) {
+			c.drive();
 		}
 		//one pulse relevant for the freq
 		//microsec calculation
-		delayMicroseconds((1000000 / channels[0].frequency) - (rkmtlab::MultiEMS::Channel::Delay * channelNum));
+		delayMicroseconds((1000000 / channels[0].frequency) - (rkmtlab::MultiEMS::Channel::Delay * channels.size()));
 	}
 }
