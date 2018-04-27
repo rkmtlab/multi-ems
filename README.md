@@ -8,7 +8,7 @@ The board is designed for ["Human Augmentation Summer School 2017."](https://hum
 ## Description
 
 The Processing sends serials to a master Arduino.  
-We currently recommend to use the analog version.  
+We currently recommend to use the **analog** version.  
 
 - ems_analog:  
   Control voltage by analog output.  
@@ -19,9 +19,12 @@ We currently recommend to use the analog version.
   
 One board has 4 output channels.  
 However, the channels can be increased by using multiple boards.  
-In this case, minor revision is required for the source codes.
-
-
+In this case, minor revision is required for the source codes.  
+  
+There are jumpers for voltage intergration, however, are used in rare cases and we do not recommend using them.
+  
+If you are using the analog ver., the jumpers should look like the figure of the board below, and the voltage digital adjusting pins should be left unconnected.  
+  
 
 ## Files
 
@@ -94,7 +97,7 @@ Please follow and check the following [liability waiver](https://github.com/Pedr
   
 ## Authors
 
-Michinari Kono, U-Tokyo ( mkono50529[at]gmail.com )
+Michinari Kono, U-Tokyo ( mchkono[at]acm.org )
 
 Acknowledgements for Keisuke Shiro, Akira Matsuda, Yota Takakura, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto for assisting the work/repo for both current and prior versions.  
 
@@ -106,6 +109,6 @@ Michinari Kono, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto. 2018. Design 
   
 ## License   
   
-Copyright (c) 2017 Michinari Kono  
+Copyright (c) 2018 Michinari Kono  
 Released under the MIT license  
 
