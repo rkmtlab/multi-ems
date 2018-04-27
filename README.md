@@ -25,8 +25,6 @@ There are jumpers for voltage intergration, however, are used in rare cases and 
   
 If you are using the analog ver., the jumpers should look like the figure of the board below, and the voltage digital adjusting pins should be left unconnected.  
   
-In this case, minor revision is required for the source codes.
-
 
 ## Installation
 
