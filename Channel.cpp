@@ -9,6 +9,7 @@ rkmtlab::MultiEMS::Channel::Channel(int channelIdentifier, int pulse, int freque
 	this->state = Enable;
 	this->duration = 0;
 	pinMode(this->_channelIdentifier + 2, OUTPUT);
+	pinMode(this->_channelIdentifier + 2 + 4, OUTPUT); //4 is the number of channels
 }
 
 int rkmtlab::MultiEMS::Channel::channelIdentifier()
