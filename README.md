@@ -65,7 +65,7 @@ If you are using the analog ver., the jumpers should look like the figure of the
 - Do NOT place electrodes to dangerous parts of the body. E.g., around the chest/heart.
 - Take care of the output voltage. 
 - See LICENSE.
-- Follow the Liabilirt Waiver before usage.
+- Follow the Liability Waiver before usage.
 
 
 ## Developing your own Board
