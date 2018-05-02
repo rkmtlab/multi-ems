@@ -32,7 +32,7 @@ int rkmtlab::MultiEMS::Channel::drive()
 
 void rkmtlab::MultiEMS::Channel::discharge()
 {
-	digitalWrite(this->channelIdentifier() + 2, HIGH);
+	digitalWrite(this->channelIdentifier() + 2 + 4, HIGH);
 	delayMicroseconds(100);
-	digitalWrite(this->channelIdentifier() + 2, LOW);
+	digitalWrite(this->channelIdentifier() + 2 + 4, LOW);
 }
