@@ -1,9 +1,9 @@
 AQW210 Photo MOS Relay *8
 LM555 Timer IC *4
 2MΩ Variable Resistor *4
-1mH Inductor *4
+1mH Inductor *4 (100mA recommended)
 1uF 300V Capacitor *4
-50mA Polyswitch *4
+Fuse/Polyswitch *4 (or an alternative that restricts the output current at 50--100mA maximum)
 0Ω Resistor *4
 1kΩ Resistor *4
 10kΩ Resistor *8
@@ -11,7 +11,9 @@ LM555 Timer IC *4
 Switching Diode *4
 2N5551 Transistor *4
 0.01uF Capacitor *8
-0.1uF Capacitor * 5
+0.1uF Capacitor * 5 (Voltage at least 100V~, 200V~ recommended)
 10uF Capacitor *1
 Jumpers
 Sockets
+
+Notes: Resistors and capacitors without any notes can be filled with typical ones, e.g., 1/8W, 50V.
