@@ -21,9 +21,9 @@ int rkmtlab::MultiEMS::Channel::drive()
 {
 	if (this->state == Channel::State::Enable) {
 		digitalWrite(this->channelIdentifier() + 2, HIGH);
-		delayMicroseconds(pulse);
+		delayMicroseconds(this->pulse);
 		digitalWrite(this->channelIdentifier() + 2, LOW);
-		delayMicroseconds(Channel::Delay - pulse);
+		delayMicroseconds(Channel::Delay - this->pulse);
 	}
 	else if (this->state == Channel::State::Disable) {
 		digitalWrite(this->channelIdentifier() + 2, LOW);
