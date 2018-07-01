@@ -112,6 +112,13 @@ void draw() {
     checkBox.deactivate(3);
   }
   
+  if (port.available() > 0) {
+    String str = port.readString();
+    if (str != null) {
+      println(str);
+    }
+  }
+  
 }
 
 /*
@@ -247,4 +254,3 @@ void controls() {
   }
 
 }
-
