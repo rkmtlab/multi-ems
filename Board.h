@@ -10,7 +10,7 @@ namespace MultiEMS
 {
 	class Board
 	{
-	private:
+	protected:
 		int _numberOfChannels;
 		std::vector<MultiEMS::Channel *> _channels;
 
