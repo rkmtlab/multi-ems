@@ -116,7 +116,9 @@ Acknowledgements for Keisuke Shiro, Akira Matsuda, Yota Takakura, Yoshio Ishigur
   
 Michinari Kono, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto. 2018. Design and Study of a Multi-Channel Electrical Muscle Stimulation Toolkit for Human Augmentation. In Proceedings of the 9th Augmented Human International Conference (AH '18). ACM, New York, NY, USA, Article 11, 8 pages. DOI: https://doi.org/10.1145/3174910.3174913  
   
+  
 The following article includes a survey of EMS in HCI, and safety topics.  
+
 Michinari Kono, Takumi Takahashi, Hiromi Nakamura, Takashi Miyaki, and Jun Rekimoto. 2018. Design Guideline for Developing Safe Systems that Apply Electricity to the Human Body. ACM Trans. Comput.-Hum. Interact. 25, 3, Article 19 (June 2018), 36 pages. DOI: https://doi.org/10.1145/3184743
   
 ## License   
