@@ -4,10 +4,10 @@ LM555 Timer IC *4
 1mH Inductor *4 (100mA recommended)
 1uF 300V Capacitor *4
 Fuse/Polyswitch *4 (or an alternative that restricts the output current at 50--100mA maximum)
-0Ω Resistor *4
-1kΩ Resistor *4
-10kΩ Resistor *8
-100kΩ Resistor *4
+0Ω Resistor *4 (R17--R20)
+1kΩ Resistor *4 (R9, R11, R13, R15)
+10kΩ Resistor *8 (R1--R8)
+100kΩ Resistor *4 (R10, R12, R14, R16)
 Switching Diode *4
 2N5551 Transistor *4
 0.01uF Capacitor *8
