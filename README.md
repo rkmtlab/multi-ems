@@ -56,6 +56,7 @@ If you are using the analog ver., the jumpers should look like the figure of the
 
 ![boardinfo](https://user-images.githubusercontent.com/22442291/30726366-4db8ca26-9f85-11e7-8a8a-daeab15c35e7.jpg)
 
+![boardconnection](https://github.com/rkmtlab/multi-ems/blob/master/image/connection.jpg)
 
 
 ## Read Before Use
