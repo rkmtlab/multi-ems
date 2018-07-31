@@ -124,6 +124,6 @@ Michinari Kono, Takumi Takahashi, Hiromi Nakamura, Takashi Miyaki, and Jun Rekim
   
 ## License   
   
-Copyright (c) 2018 Michinari Kono  
+Copyright (c) 2017 Michinari Kono  
 Released under the MIT license  
 
