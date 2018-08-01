@@ -4,6 +4,7 @@
 Simultaneous output of maximum of 20 channels are available.  
 The board is designed for ["Human Augmentation Summer School 2017."](https://humanaugmentation.jp/summerschool2017/)  
   
+If you find any errors, simply try codes from a stable branch.  
 The "multi-ems-Apr18" branch is a stable branch that was used for a successful workshop.  
   
 
