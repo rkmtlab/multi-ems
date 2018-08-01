@@ -44,8 +44,8 @@ If you are using the analog ver., the jumpers should look like the figure of the
   - emsFaceArd_2: The master Arduino for EMS pulse generation
   - wire_ems: The slave Arduino for voltage adjusting pulse generation (500 Hz max)
   - wire_ems_time (recommended): The slave Arduino for voltage adjusting pulse generation (500 Hz max), gradually increase the output voltage
-
-
+  
+Don't forget to modify the serial port in the P5 code. (String portName = Serial.list()[**5**];)  
 
 
 
