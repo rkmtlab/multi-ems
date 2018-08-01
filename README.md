@@ -36,7 +36,9 @@ If you are using the analog ver., the jumpers should look like the figure of the
 ## Dependencies
 
 - [StandardCplusplus](https://github.com/maniacbug/StandardCplusplus)
-- [Metro](https://github.com/thomasfredericks/Metro-Arduino-Wiring)
+- [Metro](https://github.com/thomasfredericks/Metro-Arduino-Wiring)  
+  
+Use the newest version of Arduino.
 
 ## Files
 
