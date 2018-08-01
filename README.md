@@ -24,7 +24,7 @@ One board has 4 output channels.
 However, the channels can be increased by using multiple boards.  
 In this case, minor revision is required for the source codes.  
   
-There are jumpers for voltage intergration, however, are used in rare cases and we do not recommend using them.
+There are jumpers for voltage integration, however, are used in rare cases and we do not recommend using them.
   
 If you are using the analog ver., the jumpers should look like the figure of the board below, and the voltage digital adjusting pins should be left unconnected.  
   
