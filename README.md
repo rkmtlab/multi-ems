@@ -4,6 +4,7 @@
 Simultaneous output of maximum of 20 channels are available.  
 The board is designed for ["Human Augmentation Summer School 2017."](https://humanaugmentation.jp/summerschool2017/)  
 
+  
 
 ## Description
 
@@ -21,10 +22,16 @@ One board has 4 output channels.
 However, the channels can be increased by using multiple boards.  
 In this case, minor revision is required for the source codes.  
   
-There are jumpers for voltage intergration, however, are used in rare cases and we do not recommend using them.
+There are jumpers for voltage integration, however, are used in rare cases and we do not recommend using them.
   
 If you are using the analog ver., the jumpers should look like the figure of the board below, and the voltage digital adjusting pins should be left unconnected.  
   
+
+
+## Dependencies
+
+- [StandardCplusplus](https://github.com/maniacbug/StandardCplusplus)
+- [Metro](https://github.com/thomasfredericks/Metro-Arduino-Wiring)
 
 ## Files
 
@@ -41,22 +48,26 @@ If you are using the analog ver., the jumpers should look like the figure of the
 
 
 
+
 ## Board Detail
 
 ![boardinfo](https://user-images.githubusercontent.com/22442291/30726366-4db8ca26-9f85-11e7-8a8a-daeab15c35e7.jpg)
 
+![boardconnection](https://github.com/rkmtlab/multi-ems/blob/master/image/connection.jpg)
 
 
 ## Read Before Use
 
 - Use only under confident understandings of EMS. 
-  - You can see details from other great projects [here.](https://github.com/PedroLopes/openEMSstim)
+  - You can see details from other great projects [here.](https://github.com/PedroLopes/openEMSstim)  
+  - You can see an overview of related work in my [article.](https://doi.org/10.1145/3184743)  
 - The board and softwares are NOT medically approved. Always use the device following author's instruction.
 - Do NOT leave the power on when it is not in use.
 - Do NOT place electrodes to dangerous parts of the body. E.g., around the chest/heart.
 - Take care of the output voltage. 
 - See LICENSE.
-- Follow the Liabilirt Waiver before usage.
+- Follow the Liability Waiver before usage.  
+- It is important to use an individual power source for the 3V input (noted as Battery in the figure) due to safety reasons.  
 
 
 ## Developing your own Board
@@ -89,8 +100,7 @@ Please follow and check the following [liability waiver](https://github.com/Pedr
 ## Future Work and Areas of Improvement
 
 - The components are not limited to the things indicated in the partslist.txt. The board can modified to be much more cheaper/smaller.
-- The voltage changes exponentially. 
-- The name of the board/repository is temporal.
+- The voltage changes exponentially.  
 - My original purpose of the board was to apply EMS to the face. This is why some of the file names are names something including the term ``face.'' These are to be renamed in future updates.  
   
   
@@ -104,10 +114,13 @@ Acknowledgements for Keisuke Shiro, Akira Matsuda, Yota Takakura, Yoshio Ishigur
 ## Publications  
   
 Michinari Kono, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto. 2018. Design and Study of a Multi-Channel Electrical Muscle Stimulation Toolkit for Human Augmentation. In Proceedings of the 9th Augmented Human International Conference (AH '18). ACM, New York, NY, USA, Article 11, 8 pages. DOI: https://doi.org/10.1145/3174910.3174913  
+  
+  
+The following article includes a survey of EMS in HCI, and safety topics.  
 
+Michinari Kono, Takumi Takahashi, Hiromi Nakamura, Takashi Miyaki, and Jun Rekimoto. 2018. Design Guideline for Developing Safe Systems that Apply Electricity to the Human Body. ACM Trans. Comput.-Hum. Interact. 25, 3, Article 19 (June 2018), 36 pages. DOI: https://doi.org/10.1145/3184743
   
 ## License   
   
 Copyright (c) 2017 Michinari Kono  
 Released under the MIT license  
-
