@@ -88,7 +88,6 @@ Please follow and check the following [liability waiver](https://github.com/Pedr
 
 ## Future Work and Areas of Improvement
 
-- The board can be upgraded and become much smaller by surface mounting.
 - The components are not limited to the things indicated in the partslist.txt. The board can modified to be much more cheaper/smaller.
 - The voltage changes exponentially. 
 - The name of the board/repository is temporal.
@@ -109,6 +108,6 @@ Michinari Kono, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto. 2018. Design 
   
 ## License   
   
-Copyright (c) 2018 Michinari Kono  
+Copyright (c) 2017 Michinari Kono  
 Released under the MIT license  
 
