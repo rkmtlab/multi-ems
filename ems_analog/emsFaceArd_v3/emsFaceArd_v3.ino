@@ -42,12 +42,12 @@ void setup(){
 void loop(){
 
   
-//  //alwayas discharge
-//    for(int i=0;i<channelNum;i++){ 
-//        digitalWrite(i+2+channelNum,HIGH); 
-//        delayMicroseconds(100);
-//        digitalWrite(i+2+channelNum,LOW); 
-//    }
+ //alwayas discharge
+   for(int i=0;i<channelNum;i++){ 
+       digitalWrite(i+2+channelNum,HIGH); 
+       delayMicroseconds(200);
+       digitalWrite(i+2+channelNum,LOW); 
+   }
   
   //if serial recieved, read and write to i2c
     if(Serial.available() > 19){
@@ -61,13 +61,6 @@ void loop(){
        channels[i].setState(Serial.read());
        channels[i].setDuration(Serial.read()*100); //converted for msec
 
-    }
-        
-       //alwayas discharge
-    for(int i=0;i<channelNum;i++){ 
-        digitalWrite(i+2+channelNum,HIGH); 
-        delayMicroseconds(200);
-        digitalWrite(i+2+channelNum,LOW); 
     }
         
      channelWrite();
