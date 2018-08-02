@@ -2,14 +2,16 @@
 //multi-ch EMS
 //Michi Kono, U-Tokyo
 
+//2018/8/2
+//modified
+
 
 #include "Channel.h"
 #include <StandardCplusplus.h>
 #include <vector>
 using namespace std;
-
-//500 Hz max for voltage
-
+  
+  
 #define ON 1
 #define OFF 0
 
@@ -30,7 +32,7 @@ void setup(){
     pinMode(i+2,OUTPUT);
   }
   
-  for(int j=4; j<8; j++){
+  for(int j=channelNum; j<channelNum+4; j++){
     pinMode(j+2, OUTPUT);
   }
   
@@ -40,12 +42,12 @@ void setup(){
 void loop(){
 
   
-  //alwayas discharge
-    for(int i=0;i<channelNum;i++){ 
-        digitalWrite(i+2+channelNum,HIGH); 
-        delayMicroseconds(100);
-        digitalWrite(i+2+channelNum,LOW); 
-    }
+//  //alwayas discharge
+//    for(int i=0;i<channelNum;i++){ 
+//        digitalWrite(i+2+channelNum,HIGH); 
+//        delayMicroseconds(100);
+//        digitalWrite(i+2+channelNum,LOW); 
+//    }
   
   //if serial recieved, read and write to i2c
     if(Serial.available() > 19){
@@ -59,6 +61,13 @@ void loop(){
        channels[i].setState(Serial.read());
        channels[i].setDuration(Serial.read()*100); //converted for msec
 
+    }
+        
+       //alwayas discharge
+    for(int i=0;i<channelNum;i++){ 
+        digitalWrite(i+2+channelNum,HIGH); 
+        delayMicroseconds(200);
+        digitalWrite(i+2+channelNum,LOW); 
     }
         
      channelWrite();
