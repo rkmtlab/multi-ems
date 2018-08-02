@@ -50,7 +50,7 @@ void loop(){
    }
   
   //if serial recieved, read and write to i2c
-    if(Serial.available() > 19){
+    if(Serial.available() > ((channelNum*5)-1) ){
 
     
     for(int i=0;i<channelNum;i++){
