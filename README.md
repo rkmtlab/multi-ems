@@ -17,6 +17,13 @@ However, the channels can be increased by using multiple boards.
 In this case, minor revision is required for the source codes.  
       
 
+## READ BEFORE USE
+
+**You must read the following document before usage. [TERMSOFUSE.md](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.1.1/TERMSOFUSE.md)**  
+By using the repository, you are confirming and agreeing to the terms in the [document](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.1.1/TERMSOFUSE.md).  
+
+
+
 ## Dependencies
 
 - [StandardCplusplus](https://github.com/maniacbug/StandardCplusplus)
@@ -34,13 +41,6 @@ In this case, minor revision is required for the source codes.
 ## Board Detail
 
 
-
- 
-
-## READ BEFORE USE
-
-**You must read the following document before usage. [TERMS.md]()**  
-By using the repository, you are confirming and agreeing to the terms in the [document]().  
 
 
 
