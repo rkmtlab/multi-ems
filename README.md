@@ -3,9 +3,15 @@
 "multi-channel EMS" with Processing and Arduino.  
 Simultaneous output of maximum of 20 channels are available.  
   
-**This version is under development.**  
+**This version is WORK IN PROGRESS.**  
 This version has several significant improvements from the prior version.  
   
+
+## Branches  
+  
+A prior stable version can be found in [multi-ems-Apr18](https://github.com/rkmtlab/multi-ems/tree/multi-ems-Apr18).  
+A C++ formatted version (for a prior ver.) can be found in [multi-ems-cpp](https://github.com/rkmtlab/multi-ems/tree/multi-ems-cpp).  
+
   
 ## Description
 
