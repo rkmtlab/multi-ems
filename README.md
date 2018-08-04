@@ -8,6 +8,12 @@ If you find any errors, simply try codes from a stable branch.
 The "multi-ems-Apr18" branch is a stable branch that was used for a successful workshop.  
   
 
+## READ BEFORE USE
+
+**You must read the following document before usage. [TERMSOFUSE.md](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.1.1/TERMSOFUSE.md)**  
+By using the repository, you are confirming and agreeing to the terms in the [document](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.1.1/TERMSOFUSE.md).  
+
+
 ## Description
 
 The Processing sends serials to a master Arduino.  
