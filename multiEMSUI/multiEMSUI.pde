@@ -1,7 +1,8 @@
 //multi EMS controller
-//2017/9/7
+//2018/8/3
 //Michi Kono, U-Tokyo
-//stimulation intervals should be more than the duration+3seconds.
+//use serialPrinting() to output signals. do not use continuously.
+
 
 import processing.serial.*;
 import controlP5.*;
@@ -22,21 +23,24 @@ final int MAX_FREQ = 150;
 final int MIN_VOLT = 0;
 final int MAX_VOLT = 50;
 
-//1 < t < 10 sec
-final int MIN_TIME = 1;
-final int MAX_TIME = 10;
+//200 ms < t < 2000 ms
+final int MIN_TIME = 200;
+final int MAX_TIME = 2000;
 
 //init values
-final int PULSE_INIT = 70;
+final int PULSE_INIT = 100;
 final int FREQ_INIT = 100;
 final int VOLT_INIT = 5;
 final int TIME_INIT = 1;
+
+//debug
+final boolean disableSerial = OFF;
 
 
 /*
 //the number of channels
  */
-final int channelNum = 10;  //n >= 10
+final int channelNum = 4;  //4 for one board
 
 
 PFont font_20;
@@ -63,12 +67,14 @@ void setup() {
   font_20 = loadFont("Helvetica-20.vlw");
   font = new ControlFont(font_20, 241);
   //font.setSize(20);
-  printArray(Serial.list());
-  String portName = Serial.list()[5];
-  //port  =new Serial(this,"/dev/tty.usbmodem121",115200);  
-  //port  =new Serial(this,"/dev/tty.usbmodem122",9600);  
-  //port.bufferUntil('\n');
-  port = new Serial(this, portName, 115200);
+  
+  
+  //Serial settings
+  if(disableSerial == OFF){
+    printArray(Serial.list());
+    String portName = Serial.list()[7];
+    port = new Serial(this, portName, 115200);
+  }
 
   channels = new Channel[channelNum];
   checkbox = new CheckBox[channelNum];
@@ -82,7 +88,7 @@ void setup() {
     PulseWidth[i] = 100;
     Frequency[i] = 100;
     Voltage[i] = 50;
-    Time[i] = 200;
+    Time[i] = 1;
   }
 
   controls();
@@ -136,13 +142,16 @@ serial write to arduino
  */
 void serialPrinting() {
 
-  for (int i=0; i<channelNum; i++) {
-    port.write(channels[i].getPulse());
-    port.write(channels[i].getFrequency());
-    port.write(channels[i].getVoltage());
-    port.write(channels[i].getState());
-    port.write(channels[i].getTime());
+  if(disableSerial == OFF){
+    for (int i=0; i<channelNum; i++) {
+      port.write(channels[i].getPulse());
+      port.write(channels[i].getFrequency());
+      port.write(channels[i].getVoltage());
+      port.write(channels[i].getState());
+      port.write(channels[i].getTime()/100);
+    }
   }
+  
 }
 
 
@@ -357,4 +366,3 @@ void controls() {
   }
   
 }
-

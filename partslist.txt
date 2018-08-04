@@ -1,5 +1,9 @@
-AQW210 Photo MOS Relay *8
+AQW210 Photo MOS Relay *4
+AQW212 Photo MOS Relay *2
 LM555 Timer IC *4
+ATMega 328P *1
+Crystal 16MHz *1
+22 pF Capacitor *2 
 2MΩ Variable Resistor *4
 1mH Inductor *4 (100mA recommended)
 1uF 300V Capacitor *4
@@ -8,12 +12,50 @@ Fuse/Polyswitch *4 (or an alternative that restricts the output current at 50--1
 1kΩ Resistor *4
 10kΩ Resistor *8
 100kΩ Resistor *4
-Switching Diode *4
+Switching Diode *4 (1N4148, but not limited to it)
 2N5551 Transistor *4
 0.01uF Capacitor *8
 0.1uF Capacitor * 5 (Voltage at least 100V~, 200V~ recommended)
 10uF Capacitor *1
 Jumpers
 Sockets
+Jacks
+Connectors
+Switches
+LEDs
+Other Resistors for Current Limitations of LEDs/Transistors/Relays
+
+
+Optional
+2N5551 Transistor *4
+2SC1815 Transistor *5
+Resistors for Current Limitation
+Resistors and Capacitors for LPF/HPF
+
 
 Notes: Resistors and capacitors without any notes can be filled with typical ones, e.g., 1/8W, 50V.
+
+C6,C22: 22pF 
+C21,C24: 10uF
+C1,C2,C7,C9: 1uF (200V)
+C4,C5,C8,C10: 0.1uF (200V)
+C11,C12,C13,C14,C15,C16,C17,C18: 0.01uF
+R10,R12,R14,R16: 100kΩ
+R9,R11,R13,R15: 1kΩ
+R38: 10kΩ
+R17,R18,R19,R20,R27,R28,R29,R30: 330Ω
+
+R31,R39,R42,R45: 30kΩ 
+R48: 20kΩ
+R33,R34,R35,R36: 30kΩ
+
+
+R25,R26,R49: depends on the used LED
+
+R1,R2,R3,R4,R5,R6,R7,R8: 10kΩ (can be left unused)
+
+C3,C23,C25,C26 and
+R37,R42,R44,R47
+are used for LPF/HPF. You can leave them unused (R37,R42,R44,R47 should be 0Ω in this case, simply use jumpers).
+
+CN6 is an optional socket for battery connection. You can use this for Li-po batteries etc. Be careful not to use them simultaneously with other Vin sockets.
