@@ -106,7 +106,7 @@ Here are some example electrodes that are typically used in EMS work.
 
 ## Liability Waiver
 
-Please follow and check the following [liability waiver](https://github.com/PedroLopes/openEMSstim/blob/master/documentation/liability_waiver.md) before usage.
+Please follow and check the following [liability waiver](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.1.1/LIABILITYWAIVER.md) before usage.
 
 
 ## Future Work and Areas of Improvement
