@@ -5,6 +5,11 @@ Simultaneous output of maximum of 20 channels are available.
 The board is designed for ["Human Augmentation Summer School 2017."](https://humanaugmentation.jp/summerschool2017/)  
 
   
+## READ BEFORE USE
+
+**You must read the following document before usage. [TERMSOFUSE.md](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.1.1/TERMSOFUSE.md)**  
+By using the repository, you are confirming and agreeing to the terms in the [document](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.1.1/TERMSOFUSE.md).   
+
 
 ## Description
 
