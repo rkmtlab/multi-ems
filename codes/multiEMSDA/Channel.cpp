@@ -58,7 +58,7 @@ long Channel::getDuration(){
 }
 
 
-int Channel::channelOut(int channelNumber, long startSec){
+int Channel::channelOut(int channelNumber){
 
     if(state == 1){   
       digitalWrite(channelNumber+2,HIGH);

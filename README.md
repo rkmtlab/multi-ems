@@ -54,12 +54,9 @@ By using the repository, you are confirming and agreeing to the terms in the [do
 
 Follow the partslist.txt.  
 - There are optional parts for implementation, where you can adjust some parameters by yourself.  
-- You can adjust the current limitation, as well as LPF/HPF, or otherwise you can just leave them unused by inserting jumpers.  
 - Audio jacks are optional, which you can simply use the other sockets for electrode connection.  
-- The audio jacks are compatible with [Omrons cables](https://store.healthcare.omron.co.jp/item/HV_CODE_K.html) and [electrodes](https://store.healthcare.omron.co.jp/item/HV_LLPAD_3P.html).  
-- T5,T8,T10,T12can be used for current limitation. Insert them in with a 6--12Ω resistor (R37,R40,R43,R47). Otherwise insert jumper wires between C-E of the transistor.  
+- The audio jacks are compatible with [Omrons cables](https://store.healthcare.omron.co.jp/item/HV_CODE_K.html) and [electrodes](https://store.healthcare.omron.co.jp/item/HV_LLPAD_3P.html) and other EMS standard plugs.  
 - Use the Arduino bootloader and duplicate the Arduino with ATmega328P (or buy one from [stores](https://www.switch-science.com/catalog/663/)). Then write the 'multiEMSSlave.ino' to the microcomputer.  
-- There are issues in the current board. C1,C2,C7,C9 should be **1uF**, not 10uF. C3,C23,C25,C26 can overlap with the audio jacks.  
   
 
 ## Notes  

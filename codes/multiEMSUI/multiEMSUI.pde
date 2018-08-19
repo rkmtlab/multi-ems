@@ -1,5 +1,5 @@
 //multi EMS controller
-//2018/8/3
+//2018/8/19
 //Michi Kono, U-Tokyo
 //use serialPrinting() to output signals. do not use continuously.
 
@@ -19,7 +19,7 @@ final int MAX_PULSE = 240;
 final int MIN_FREQ = 50; //f > 50
 final int MAX_FREQ = 150;
 
-//0 < V < 50 ?
+//0 < V < 50 (this does not mean the actual voltage value)
 final int MIN_VOLT = 0;
 final int MAX_VOLT = 50;
 
@@ -72,7 +72,7 @@ void setup() {
   //Serial settings
   if(disableSerial == OFF){
     printArray(Serial.list());
-    String portName = Serial.list()[7];
+    String portName = Serial.list()[9];
     port = new Serial(this, portName, 115200);
   }
 

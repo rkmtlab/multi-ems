@@ -1,4 +1,4 @@
-//2018/8/3
+//2018/8/10
 //multi-ch EMS
 //Michi Kono, U-Tokyo
 
@@ -8,7 +8,7 @@
 #include <vector>
 using namespace std;
 
-//500 Hz max for voltage
+//500 Hz max for voltage in slave
 
 #include <Wire.h>
 
@@ -20,22 +20,33 @@ using namespace std;
 
 vector<Channel> channels;
 
-int channelNum = 4;
 
+/////////////////
+
+//this is the only part you should modify
+
+int channelNum = 4; //how many channels your using
+
+/////////////////
+
+
+int chargePin = channelNum+2;
+int dischargePin = channelNum+3;
 
 void setup(){
   Serial.begin(115200);
   Wire.begin();
-  //Serial.begin(9600);
   
   for(int i=0; i<channelNum; i++){
     channels.push_back(Channel(100, 100, 50, OFF, 1));
-    pinMode(i+2,OUTPUT);
+    pinMode(i+2, OUTPUT); //do not use TX/RX pins
   }
   
   //charging pin
-  pinMode(channelNum+3,OUTPUT);
+  pinMode(chargePin, OUTPUT);
 
+  //discharging pin
+  pinMode(dischargePin, OUTPUT);
   
 }
 
@@ -46,8 +57,12 @@ void loop(){
     if(Serial.available() > ((channelNum*5)-1)){
 
       //start charging
-      digitalWrite(channelNum+3, HIGH);  
-     
+      digitalWrite(chargePin, HIGH);  
+      //discharge
+      digitalWrite(dischargePin, HIGH);
+      delayMicroseconds(200);
+      digitalWrite(dischargePin, LOW);
+      
       //read from serial
       for(int i=0;i<channelNum;i++){
     
@@ -59,7 +74,7 @@ void loop(){
   
       }
       
-      //send to slave
+      //send to slave, voltage info. and duration
       Wire.beginTransmission(1);
   
       for(int i=0;i<channelNum;i++){
@@ -87,7 +102,7 @@ void channelWrite(){
   for(int t=0; t< ( (channels[0].getDuration()) / (1000/channels[0].getFrequency()) ) ;t++){
     
     for(int i=0;i<channelNum;i++){            
-      channels[i].channelOut(i,0);
+      channels[i].channelOut(i);
     }
     
   //one pulse relevant for the freq
@@ -97,6 +112,6 @@ void channelWrite(){
   }
   
   //stop charging
-  digitalWrite(channelNum+3, LOW);
+  digitalWrite(chargePin, LOW);
   
 }

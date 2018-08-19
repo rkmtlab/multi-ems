@@ -13,7 +13,7 @@ class Channel{
   Channel();
   Channel(int pulseTemp, int frequencyTemp, int voltageTemp, int stateTemp, int durationTemp);
  
- void initialize();
+  void initialize();
 
   void setPulse(int pulseTemp);
   void setFrequency(int frequencyTemp);
@@ -27,8 +27,6 @@ class Channel{
   int getState();
   long getDuration();
   
-  int channelOut(int channelNumber, long startSec);
-  int channelVoltage(int channelNumber, long startSec);
-  
+  int channelOut(int channelNumber);  
   
 };
