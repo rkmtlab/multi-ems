@@ -1,1 +1,62 @@
-AQW210 Photo MOS Relay *6AQW212 Photo MOS Relay *2LM555 Timer IC *4ATMega 328P *1Crystal 16MHz *122 pF Capacitor *2 2M½ Variable Resistor *41mH Inductor *4 (100mA recommended)1uF 100V~ Capacitor *4Fuse/Polyswitch *4 (or an alternative that restricts the output current at 50--100mA maximum)51½ Resistor *5100½ Resistor *4330½ Resistor *41k½ Resistor *410k½ Resistor *12100k½ Resistor *4Switching Diode *4 (1N4148, but not limited to it)2N5551 Transistor *4 (be careful of the type of transistor, which can be CBE [TO-92(1)], EBC [TO-92(3)])2SC1815 Transistor *10.01uF Capacitor *80.1uF 100V~ Capacitor *40.1uF Capacitor *110uF Capacitor *2SocketsJacksConnectorsSwitchesLEDsOther Resistors for Current Limitations of LEDs/Transistors/RelaysNotes: Resistors and capacitors without any notes can be filled with typical ones, e.g., 1/8W, 50V.C6,C22: 22pF C21,C24: 10uFC1,C2,C7,C9: 1uF (100V~)C4,C5,C8,C10: 0.1uF (100V~)C11,C12,C13,C14,C15,C16,C17,C18: 0.01uFR10,R12,R14,R16: 100k½R9,R11,R13,R15: 1k½R38: 10k½R17,R18,R19,R20: 330½ (for 212 input)R27,R28,R29,R30: 100½ (for 210*2 input)R31,R32,R37,R39: 10k½ pull downR33,R34,R35,R36: 51½ ? (for 5551 base)R42,R43,R44,R45: 0½/jumpersR40: 51½ (for 210*4 input)R25,R26,R49: depends on the used LED, e.g., R25 1.5k½, R26 500½, R49 1.5k½ with SML-310DTT86 (LED1/2), SML-512MWT86 (LED3) R1,R2,R3,R4,R5,R6,R7,R8,R41,R46: 10k½ (can be left unused, they are pull-down resistors but Arduino has pull-down elements in itself)CN6 is an optional socket for battery connection. You can use this for Li-po batteries etc. Be careful not to use them simultaneously with other Vin sockets.
+AQW210 Photo MOS Relay *6
+AQW212 Photo MOS Relay *2
+LM555 Timer IC *4
+ATMega 328P *1
+Crystal 16MHz *1
+22 pF Capacitor *2 
+2MÎ© Variable Resistor *4
+1mH Inductor *4 (100mA recommended)
+1uF 100V~ Capacitor *4
+Fuse/Polyswitch *4 (or an alternative that restricts the output current at 50--100mA maximum)
+51Î© Resistor *5
+100Î© Resistor *4
+330Î© Resistor *4
+1kÎ© Resistor *4
+10kÎ© Resistor *12
+100kÎ© Resistor *4
+Switching Diode *4 (1N4148, but not limited to it)
+2N5551 Transistor *4 (be careful of the type of transistor, which can be CBE [TO-92(1)] for v3.2.2 board, and EBC [TO-92(3)] for v3.3.3 board)
+2SC1815 Transistor *1
+0.01uF Capacitor *8
+0.1uF 100V~ Capacitor *4
+0.1uF Capacitor *1
+10uF Capacitor *2
+Sockets
+Jacks
+Connectors
+Switches
+LEDs
+Other Resistors for Current Limitations of LEDs/Transistors/Relays
+
+Notes: Resistors and capacitors without any notes can be filled with typical ones, e.g., 1/8W, 50V.
+
+C6,C22: 22pF 
+C21,C24: 10uF
+C1,C2,C7,C9: 1uF (100V~)
+C4,C5,C8,C10: 0.1uF (100V~)
+C11,C12,C13,C14,C15,C16,C17,C18: 0.01uF
+R10,R12,R14,R16: 100kÎ©
+R9,R11,R13,R15: 1kÎ©
+R38: 10kÎ©
+
+R17,R18,R19,R20: 330Î© (for 212 input)
+R27,R28,R29,R30: 100Î© (for 210*2 input)
+R31,R32,R37,R39: 10kÎ© pull down
+R33,R34,R35,R36: 51Î© ? (for 5551 base)
+
+R42,R43,R44,R45: 0Î©/jumpers
+
+R40: 51Î© (for 210*4 input)
+
+R25,R26,R49: depends on the used LED, e.g., R25 1.5kÎ©, R26 500Î©, R49 1.5kÎ© with SML-310DTT86 (LED1/2), SML-512MWT86 (LED3) 
+
+R1,R2,R3,R4,R5,R6,R7,R8,R41,R46: 10kÎ© (can be left unused, they are pull-down resistors but Arduino has pull-down elements in itself)
+
+CN6 is an optional socket for battery connection. You can use this for Li-po batteries etc. Be careful not to use them simultaneously with other Vin sockets.
+
+
+
+
+
+
+
