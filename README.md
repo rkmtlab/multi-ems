@@ -3,7 +3,7 @@
 "multi-channel EMS" with Processing and Arduino.  
 Simultaneous output of maximum of 20 channels are available.  
   
-**This version is WORK IN PROGRESS.**  
+**This version is SUSPENDED.**  
 This version has several significant improvements from the prior version.  
   
 
