@@ -24,6 +24,7 @@ Switching Diode *4 (1N4148, but not limited to it)
 0.1uF Capacitor *1
 10uF Capacitor *2
 Pin Sockets *12
+MKDS terminal block, 4 pins *2
 MJ-352W-0 Audio Jacks *4
 XH Connector *1
 SPDT Switches *6
