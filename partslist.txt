@@ -1,3 +1,5 @@
+----- Partslist ----
+
 AQW210 Photo MOS Relay *6
 AQW212 Photo MOS Relay *2
 LM555 Timer IC *4
@@ -7,7 +9,7 @@ Crystal 16MHz *1
 2MΩ Variable Resistor *4
 1mH Inductor *4 (100mA recommended)
 1uF 100V~ Capacitor *4
-Fuse/Polyswitch *4 (or an alternative that restricts the output current at 50--100mA maximum)
+CMF-RL50A-0 Fuse/Polyswitch *4 (or an alternative that restricts the output current at 50--100mA maximum)
 51Ω Resistor *5
 100Ω Resistor *4
 330Ω Resistor *4
@@ -21,14 +23,18 @@ Switching Diode *4 (1N4148, but not limited to it)
 0.1uF 100V~ Capacitor *4
 0.1uF Capacitor *1
 10uF Capacitor *2
-Sockets
-Jacks
-Connectors
-Switches
-LEDs
+Pin Sockets *12
+MJ-352W-0 Audio Jacks *4
+XH Connector *1
+SPDT Switches *6
+1608 LEDs *3
 Other Resistors for Current Limitations of LEDs/Transistors/Relays
+Other pin sockets and pin headers for connecting multiple boards
 
 Notes: Resistors and capacitors without any notes can be filled with typical ones, e.g., 1/8W, 50V.
+
+
+---- Correspondences ----
 
 C6,C22: 22pF 
 C21,C24: 10uF
@@ -49,12 +55,18 @@ R42,R43,R44,R45: 0Ω/jumpers
 R40: 51Ω (for 210*4 input)
 
 R25,R26,R49: depends on the used LED, e.g., R25 1.5kΩ, R26 500Ω, R49 1.5kΩ with SML-310DTT86 (LED1/2), SML-512MWT86 (LED3) 
+Note that you must change R26 if you use a different battery source, i.e., if not 3V.  
 
 R1,R2,R3,R4,R5,R6,R7,R8,R41,R46: 10kΩ (can be left unused, they are pull-down resistors but Arduino has pull-down elements in itself)
 
+R21,R22,R23,R24 should left open/unused. 
+
+
+---- Remarks ----
+
 CN6 is an optional socket for battery connection. You can use this for Li-po batteries etc. Be careful not to use them simultaneously with other Vin sockets.
 
-
+If you find the output stimulation too weak, you may change the inductor or power source (battery, 3.7V or 4.5V maybe). For the inductor, consider using inductors with a larger ampacity (e.g., 200mA~).
 
 
 
