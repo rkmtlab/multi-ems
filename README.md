@@ -21,8 +21,11 @@ The master Arduino communicates with the slave Arduino via I2C.
 One board has 4 output channels.  
 However, the channels can be increased by using multiple boards.  
 In this case, minor revision is required for the source codes.  
-      
-
+       
+The board has monophasic signals default.  
+You can combine 2 channels to use biphasic signals (i.e., one board for 2 channel biphasic output).  
+  
+    
 ## READ BEFORE USE
 
 **You must read the following document before usage. [TERMSOFUSE.md](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.1.1/TERMSOFUSE.md)**  
