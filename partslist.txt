@@ -50,14 +50,14 @@ R48: 5.1kΩ
 R17,R18,R19,R20: 330Ω (for 212 input)
 R27,R28,R29,R30: 100Ω (for 210*2 input)
 R31,R32,R37,R39: 10kΩ pull down
-R33,R34,R35,R36: 51Ω ? (for 5551 base)
+R33,R34,R35,R36: 51Ω ? (for 5551 base) (currently testing with 10Ω)
 
 R42,R43,R44,R45: 0Ω/jumpers
 
 R40: 51Ω (for 210*4 input)
 
 R25,R26,R49: depends on the used LED, e.g., R25 1.5kΩ, R26 500Ω, R49 1.5kΩ with SML-310DTT86 (LED1/2), SML-512MWT86 (LED3) 
-Note that you must change R26 if you use a different battery source, i.e., if not 3V.  
+Note that you must change R26 if you use a different battery source, i.e., if not 3V. In currently using 2.2kΩ and 560Ω. 
 
 R1,R2,R3,R4,R5,R6,R7,R8,R41: 10kΩ (can be left unused, they are pull-down resistors but Arduino has pull-down elements in itself)
 R46: 100kΩ (same as above)
