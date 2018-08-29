@@ -3,7 +3,6 @@
 "multi-channel EMS" with Processing and Arduino.  
 Simultaneous output of maximum of 20 channels are available.  
   
-**This version is WORK IN PROGRESS.**  
 This version has several significant improvements from the prior version.  
   
 
@@ -43,13 +42,19 @@ By using the repository, you are confirming and agreeing to the terms in the [do
   
 - multiEMSUI: The Processing code - GUI
 - multiEMSDA: The master Arduino for EMS pulse generation
-- multiEMSSlave: The slave Arduino for voltage adjusting pulse generation (500 Hz max)
+- multiEMSSlave: The slave Arduino for voltage adjusting pulse generation (500 Hz max)  
+- /case/multiems.ai: Case data for 3mm plastic  
   
 
 
 ## Board Detail
 
-
+![board](https://github.com/rkmtlab/multi-ems/blob/multi-ems-3.2.2/images/board.jpg)  
+  
+Connect GC to D6, DCG to D7 default.  
+You can use either the battery connector or the socket (BATIN and GND).  
+AGND and GND are isolated. AGND is for the Arduino and GND is for the external power source (battery).  
+Change between Digital (D) and Analog (A) intensity adjustment with the switches for each channels.  
 
 
 

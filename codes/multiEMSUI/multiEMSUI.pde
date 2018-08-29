@@ -1,7 +1,19 @@
-//multi EMS controller
-//2018/8/19
-//Michi Kono, U-Tokyo
-//use serialPrinting() to output signals. do not use continuously.
+/*
+
+multi EMS controller
+2018/8/27
+Michi Kono, U-Tokyo
+
+Use 'serialPrinting()' to output signals. Do not use continuously.
+The program sends signals every time you use 'serialPrinting()' function.
+
+The frequency should be the same among all channels. Do NOT set individual values!
+
+Dependencies:
+- controlP5
+    go to 'Sketch' -> 'Import Library' -> 'Add Library' and search for 'controlP5'
+
+*/
 
 
 import processing.serial.*;
@@ -28,14 +40,16 @@ final int MIN_TIME = 200;
 final int MAX_TIME = 2000;
 
 //init values
-final int PULSE_INIT = 100;
+final int PULSE_INIT = 150;
 final int FREQ_INIT = 100;
 final int VOLT_INIT = 5;
 final int TIME_INIT = 1;
 
-//debug
+//debug, change to ON if your adjusting the UI without serial communications
 final boolean disableSerial = OFF;
 
+//the position of the checkboxes, adjust if your using a lot of channels
+final int boxX = 500;
 
 /*
 //the number of channels
@@ -60,7 +74,9 @@ ControlFont font;
 
 
 void setup() {
-  size(1500, 1000);
+  
+  size(700, 400); //adjust if your using a lot of channels
+  
   frameRate(30);
 
   cp5 = new ControlP5(this);
@@ -72,7 +88,7 @@ void setup() {
   //Serial settings
   if(disableSerial == OFF){
     printArray(Serial.list());
-    String portName = Serial.list()[9];
+    String portName = Serial.list()[9]; //change to port number depending on your environment
     port = new Serial(this, portName, 115200);
   }
 
@@ -99,6 +115,7 @@ void setup() {
 void draw() {
   background(0);
 
+
   /*
  the frequency cannot be adjusted individually
    */
@@ -112,7 +129,8 @@ void draw() {
   updateChannels();
 
   /*
-  send to arduino after a 1 sec delay
+  send to arduino after a short delay
+  the delays can be adjusted to be shorter/longer
    */
   if (checkBox.getState(5)==true) {
     delay(500);
@@ -201,7 +219,7 @@ void controls() {
 
   //the checkboxes on the right
   checkBox = cp5.addCheckBox("checkBoxes")
-    .setPosition(1240, 40)
+    .setPosition(boxX, 40)
       .setColorForeground(color(120))
         .setColorActive(color(255))
           .setColorLabel(color(255))

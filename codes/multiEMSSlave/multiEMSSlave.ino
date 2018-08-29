@@ -9,11 +9,11 @@
 //500 Hz max for voltage, due to metro.h res
 
 int channelNum = 4;
-Metro metroVolt[channelNum];  //count time for pulse 
-Metro metroTime[channelNum];  //count time for duration
-int metroFlag[channelNum];  //counting completed
-int channelState[channelNum]; //the state of the channel
-int pinState[channelNum]; //the pin state for pulse output
+Metro metroVolt[4];  //count time for pulse 
+Metro metroTime[4];  //count time for duration
+int metroFlag[4];  //counting completed
+int channelState[4]; //the state of the channel
+int pinState[4]; //the pin state for pulse output
 
 
 void setup()
