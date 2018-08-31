@@ -1,7 +1,7 @@
 /*
 
 multi EMS controller
-2018/8/27
+2018/8/31
 Michi Kono, U-Tokyo
 
 Use 'serialPrinting()' to output signals. Do not use continuously.
@@ -42,8 +42,8 @@ final int MAX_TIME = 2000;
 //init values
 final int PULSE_INIT = 150;
 final int FREQ_INIT = 100;
-final int VOLT_INIT = 5;
-final int TIME_INIT = 1;
+final int VOLT_INIT = 10;
+final int TIME_INIT = 200;
 
 //debug, change to ON if your adjusting the UI without serial communications
 final boolean disableSerial = OFF;
@@ -100,11 +100,11 @@ void setup() {
   Time = new int[channelNum];
 
   for (int i=0; i<channelNum; i++) {
-    channels[i] = new Channel(100, 100, 50, OFF, 1);
-    PulseWidth[i] = 100;
-    Frequency[i] = 100;
-    Voltage[i] = 50;
-    Time[i] = 1;
+    channels[i] = new Channel(PULSE_INIT, FREQ_INIT, VOLT_INIT, OFF, TIME_INIT);
+    PulseWidth[i] = PULSE_INIT;
+    Frequency[i] = FREQ_INIT;
+    Voltage[i] = VOLT_INIT;
+    Time[i] = TIME_INIT;
   }
 
   controls();
@@ -117,10 +117,13 @@ void draw() {
 
 
   /*
- the frequency cannot be adjusted individually
+ the frequency and duration cannot be adjusted individually
    */
   for (int i=1; i<channelNum; i++) {
     cp5.getController("Frequency["+i+"]").setValue(cp5.getController("Frequency[0]").getValue());
+    //cp5.getController("Voltage["+i+"]").setValue(cp5.getController("Voltage[0]").getValue());
+    cp5.getController("Time["+i+"]").setValue(cp5.getController("Time[0]").getValue());
+
   } 
 
 
@@ -136,7 +139,7 @@ void draw() {
     delay(500);
 
     serialPrinting();
-    delay(1000);
+    delay(500);
     checkBox.deactivate(5);
   }
 }
