@@ -72,7 +72,8 @@ Follow the partslist.txt.
 - The voltage changes exponentially.  
 - Do not use the audio jack and the socket outputs simultaneously (however, it is possible to do so, but you must understand the theory of the circuit to do so).   
 - There is an optional socket for battery connection (CN6). You can use this for Li-po batteries etc. Be careful not to use them simultaneously with other Vin sockets. Please double check the polarity because old versions of the boards have the socket built on the oppersite way.
-- If you find the output stimulation too weak, you may change the inductor or power source (battery, 3.7V or 4.5V maybe). For the inductor, consider using inductors with a larger ampacity (e.g., 200mA~). I currently use 1mH inductors at 200mA.
+- If you find the output stimulation too weak, you may change the inductor or power source (battery, 3.7V or 4.5V maybe). For the inductor, consider using inductors with a larger ampacity (e.g., 200mA~). I currently use 1mH inductors at 200mA.  
+- The board has 4 channels. In case for testing, you can simply implement the circuit only for one channel. This will save time and will be a safer approach instead of implementing the whole board at once.
 
 
 ## Versions  
