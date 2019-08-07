@@ -64,6 +64,9 @@ R46: 100kΩ (same as above)
 
 R21,R22,R23,R24 should left open/unused. 
 
+JP1,JP6,CN2 are sockets or pins which are used to connect with the Arduino.
+JP2--JP5 are usually unused. You can use them to connect multiple boards, when using 5 or more channels.
+
 
 ---- Remarks ----
 
