@@ -1,7 +1,7 @@
 # multi-ems
 
 "multi-channel EMS" with Processing and Arduino.  
-Simultaneous output of maximum of 20 channels are available.  
+Simultaneous output of a maximum of 20 channels is available.  
   
 This version has several significant improvements from the prior version.  
   
@@ -54,7 +54,7 @@ By using the repository, you are confirming and agreeing to the terms in the [do
 Connect GC to D6, DCG to D7 default.  
 You can use either the battery connector or the socket (BATIN and GND).  
 AGND and GND are isolated. AGND is for the Arduino and GND is for the external power source (battery).  
-Change between Digital (D) and Analog (A) intensity adjustment with the switches for each channels.  
+Change between Digital (D) and Analog (A) intensity adjustment with the switches for each channel.  
 
 
 
@@ -71,21 +71,18 @@ Follow the partslist.txt.
   
 - The voltage changes exponentially.  
 - Do not use the audio jack and the socket outputs simultaneously (however, it is possible to do so, but you must understand the theory of the circuit to do so).   
-- There is an optional socket for battery connection (CN6). You can use this for Li-po batteries etc. Be careful not to use them simultaneously with other Vin sockets. Please double check the polarity because old versions of the boards have the socket built on the oppersite way.
+- There is an optional socket for battery connection (CN6). You can use this for Li-po batteries etc. Be careful not to use them simultaneously with other Vin sockets. Please double-check the polarity because old versions of the boards have the socket built in the opposite way.
 - If you find the output stimulation too weak, you may change the inductor or power source (battery, 3.7V or 4.5V maybe). For the inductor, consider using inductors with a larger ampacity (e.g., 200mA~). I currently use 1mH inductors at 200mA.  
-- The board has 4 channels. In case for testing, you can simply implement the circuit only for one channel. This will save time and will be a safer approach instead of implementing the whole board at once.
+- The board has 4 channels. In the case of testing, you can simply implement the circuit only for one channel. This will save time and will be a safer approach instead of implementing the whole board at once.
 
 
 ## Versions  
-I've uploaded several versions of the board (sch and brd). 3.2.4 is the latest and the best data, however, it seems that sometimes it is required to adjust the wiring a bit when outsourcing the PCB. Therefore, 3.2.3 is the stable version (however, the CN6 is connected the oppersite way). 3.2.2 is a earlier version, which I personally use for my own boards.  
-
-## Authors
-
-Michinari Kono, U-Tokyo ( mchkono[at]acm.org )
-
+I've uploaded several versions of the board (sch and brd). 3.2.4 is the latest and the best data, however, it seems that sometimes it is required to adjust the wiring a bit when outsourcing the PCB. Therefore, 3.2.3 is the stable version (however, the CN6 is connected the opposite way). 3.2.2 is an earlier version, which I personally use for my own boards.  
   
 
 ## Copyrights, License      
   
 Copyright (c) 2017 Michinari Kono  
-Released under the MIT license  
+Released under the MIT license
+
+Kindly note that this work was completed some time ago, and the authors are currently unable to provide active support on it.
